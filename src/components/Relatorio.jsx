@@ -1,15 +1,19 @@
-import React from "react";
+import React from 'react';
+import styled from 'styled-components';
+
+const Container = styled.div`
+  padding: 20px;
+  background-color: #f9fafc;
+  min-height: 100vh;
+  color: #333;
+`;
 
 function Relatorio() {
   return (
-    <div className="relatorio">
-      <h2>Relatório de Consumo</h2>
-      <ul>
-        <li>Consumo diário: 50 L</li>
-        <li>Consumo semanal: 350 L</li>
-        <li>Consumo mensal: 1400 L</li>
-      </ul>
-    </div>
+    <Container>
+      <h2 style={{ color: '#4a90e2' }}>Relatório de Consumo de Água</h2>
+      <p>Estimativas de consumo de água aparecerão aqui.</p>
+    </Container>
   );
 }
 

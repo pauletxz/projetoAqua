@@ -1,16 +1,22 @@
-import React from "react";
+import React from 'react';
+import styled from 'styled-components';
+
+const Container = styled.div`
+  padding: 20px;
+  background-color: #f9fafc;
+  min-height: 100vh;
+  color: #333;
+`;
 
 function Ajuda() {
   return (
-    <div className="ajuda">
-      <h2>Como Funciona</h2>
-      <p>Este sistema monitora em tempo real o nível de água da sua caixa d'água.</p>
-      <h3>Dicas de Economia de Água</h3>
-      <ul>
-        <li>Feche a torneira enquanto escova os dentes.</li>
-        <li>Use a máquina de lavar com a capacidade máxima.</li>
+    <Container>
+      <h2 style={{ color: '#4a90e2' }}>Ajuda e Dicas para Economia de Água</h2>
+      <ul style={{ color: '#666' }}>
+        <li>Verifique vazamentos regularmente.</li>
+        <li>Use a água da chuva para regar plantas.</li>
       </ul>
-    </div>
+    </Container>
   );
 }
 
